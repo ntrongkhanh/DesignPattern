@@ -1,4 +1,4 @@
-package FactoryMethod.Shape;
+package FactoryMethod.Shape.Shape;
 
 public class Triangle implements Shape{
     @Override

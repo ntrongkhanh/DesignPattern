@@ -1,4 +1,4 @@
-package FactoryMethod.Shape;
+package FactoryMethod.Shape.Shape;
 
 public class Rectangle implements Shape{
     @Override

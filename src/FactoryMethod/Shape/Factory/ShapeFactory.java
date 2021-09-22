@@ -1,13 +1,16 @@
-package FactoryMethod;
+package FactoryMethod.Shape.Factory;
 
 
-import FactoryMethod.Shape.Circle;
-import FactoryMethod.Shape.Rectangle;
-import FactoryMethod.Shape.Shape;
-import FactoryMethod.Shape.Triangle;
 
-public class ShapeFactory {
-    public static Shape getShape(String shapeType){
+import FactoryMethod.Shape.Shape.Circle;
+import FactoryMethod.Shape.Shape.Rectangle;
+import FactoryMethod.Shape.Shape.Shape;
+import FactoryMethod.Shape.Shape.Triangle;
+
+public class ShapeFactory implements Factory {
+
+    @Override
+    public Shape getShape(String shapeType){
         if(shapeType == null){
             return null;
         }
