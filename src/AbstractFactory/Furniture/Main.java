@@ -12,18 +12,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-//        FurnitureAbstractFactory plasticFactory=new PlasticFactory();
-//        Chair plasticChair=plasticFactory.createChair();
-//        Table plasticTable=plasticFactory.createTable();
-//
-//        FurnitureAbstractFactory woodFactory=new WoodFactory();
-//        Chair woodChair=woodFactory.createChair();
-//        Table woodTable=woodFactory.createTable();
-//
-//        plasticChair.getName();
-//        plasticTable.getName();
-//        woodChair.getName();
-//        woodTable.getName();
+        FurnitureAbstractFactory plasticFactory=new PlasticFactory();
+        Chair plasticChair=plasticFactory.createChair();
+        Table plasticTable=plasticFactory.createTable();
+
+        FurnitureAbstractFactory woodFactory=new WoodFactory();
+        Chair woodChair=woodFactory.createChair();
+        Table woodTable=woodFactory.createTable();
+
+        plasticChair.getName();
+        plasticTable.getName();
+        woodChair.getName();
+        woodTable.getName();
 
 //////////////////////////////
 
@@ -44,7 +44,7 @@ public class Main {
 //        table.getName();
 
 
-        ////////////////////////
+////////////////////////
 
 //        System.out.println("Nhập chất liệu:");
 //        Scanner scanner = new Scanner(System.in);
