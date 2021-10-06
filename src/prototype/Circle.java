@@ -1,6 +1,6 @@
 package prototype;
 
-public class Circle {
+public class Circle implements Cloneable {
     private int radius;
     private int x;
     private int y;
@@ -17,10 +17,20 @@ public class Circle {
         this.y = circle.y;
     }
 
+    @Override
+    protected Circle clone() {
+        try {
+            return (Circle) super.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
     public Circle() {
     }
 
-    public Circle( int x, int y,int radius) {
+    public Circle(int x, int y, int radius) {
         this.radius = radius;
         this.x = x;
         this.y = y;
@@ -49,8 +59,9 @@ public class Circle {
     public void setY(int y) {
         this.y = y;
     }
+
     @Override
     public String toString() {
-        return "x=" +x+" ,y="+y+" ,radius="+radius;
+        return "x=" + x + " ,y=" + y + " ,radius=" + radius;
     }
 }

@@ -6,8 +6,8 @@ public class Main {
         System.out.println("Drawing original object");
         circle.draw();
         System.out.println("-------------------------------------------------------------------------");
-        Circle deepCopyCircle = new Circle(circle);
-
+//        Circle deepCopyCircle = new Circle(circle);
+        Circle deepCopyCircle=circle.clone();
         System.out.println("Drawing deep copy object");
         deepCopyCircle.draw();
         System.out.println("-------------------------------------------------------------------------");
